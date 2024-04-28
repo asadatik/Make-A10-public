@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import './Navber.css'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/Provider";
-
+import userDefaultPic from '../../assets/user.png';
    
 
 const Navber = () => {
@@ -54,12 +54,9 @@ const Navber = () => {
                       <a className="text-xl text-white mx-8  " >    <NavLink  to="/login"> Login    </NavLink></a>   
                       <a className="text-xl text-white mx-8  " >    <NavLink  to="/register"> Register   </NavLink></a>
                       </div> }
-                
                
-
-
-        </div>
-      </div>
+                      </div>
+                </div>
     );
 };
 

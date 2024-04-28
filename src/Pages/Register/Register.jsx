@@ -23,7 +23,7 @@ const{ Creatuser , updatedUserProfile} = useContext(AuthContext);
 
 const Location = useLocation();
 
-console.log("Location in the login page",Location);
+console.log("Location in the register page",Location);
 
 const Navigate =  useNavigate(); 
 
@@ -65,7 +65,7 @@ const HandleLogin = (e)=>{
           timer: 2500
         });
         updatedUserProfile(Name,Photo)
-        Navigate(  Location?.state ? Location.state : '/' )    
+        Navigate(  Location?.state ? Location.state :'/' ) 
           console.log(Result.user) 
        }     )
        .catch((error)=>{
