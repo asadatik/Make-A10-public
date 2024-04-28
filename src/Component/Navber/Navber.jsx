@@ -1,6 +1,20 @@
-import { NavLink } from "react-router-dom";    
+import { Link, NavLink } from "react-router-dom";    
 import './Navber.css'
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/Provider";
+
+   
+
 const Navber = () => {
+
+  const{user,LogOut} = useContext(AuthContext);
+  console.log(user)   
+     const  signOut =() =>{
+         LogOut()
+         .then()
+         .catch()
+ 
+     }
     return (
         <div className="navbar bg-gradient-to-r from-cyan-500 to-blue-500 lg:px-40  ">
         <div className="navbar-start   ">
@@ -26,22 +40,21 @@ const Navber = () => {
         </div>
         <div className="navbar-end space-x-2 "> 
        
-                 {/* {
+                 {
                     user? <div className="tooltip tooltip-bottom " data-tip={user.displayName?user.displayName:'user name not found'}>
                    <button>    { user.photoURL?<img className="w-12  rounded-full  " src={user.photoURL} 
                 alt="" /> :  <img className="w-12 rounded-full "  src={userDefaultPic}  />  }   </button>
                        </div> 
                      :
-                  
-                   <label  tabIndex={0} className="btn tooltip  btn-ghost btn-circle avatar">  
-                             
+                   <label  tabIndex={0} className="btn tooltip  btn-ghost btn-circle avatar">           
                   </label>
-                } */}
-                {
-                    // user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-orange-500 text-white  text-lg  "  >Sign Out</Link> 
-                      <a className="text-xl text-white mx-8  " >    <NavLink  to="/login"> Login    </NavLink></a>   
-                   
                 }
+                   {user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-orange-500 text-white  text-lg  "  >Sign Out</Link> 
+                        :  <div >
+                      <a className="text-xl text-white mx-8  " >    <NavLink  to="/login"> Login    </NavLink></a>   
+                      <a className="text-xl text-white mx-8  " >    <NavLink  to="/register"> Register   </NavLink></a>
+                      </div> }
+                
                
 
 

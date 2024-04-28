@@ -11,6 +11,7 @@ import ErrorPage from './Component/Error/ErrorPage';
 import Home from './Pages/Home/Home';
 import SignIN from './Pages/SignIn/SignIN';
 import Provider from './Provider/Provider';
+import Register from './Pages/Register/Register';
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
            {
         path:"/login",
         element:  <SignIN></SignIN>
-       }
+       },
+       {
+        path:"/register",
+        element:   <Register></Register>
+    },
         
     //   {         
     //       path: '/SingleHome/:id',
@@ -35,10 +40,7 @@ const router = createBrowserRouter([
     //       loader :   ()=>fetch('/Home.json')
     //   },
  
-    // {
-    //     path:"/register",
-    //     element:   <Register></Register>
-    // },
+    
     // {
     //   path: "/updated",
     //   element:      <PrivetRoute>
