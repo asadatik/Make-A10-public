@@ -13,6 +13,7 @@ import SignIN from './Pages/SignIn/SignIN';
 import Provider from './Provider/Provider';
 import Register from './Pages/Register/Register';
 import AddTour from './Pages/ADDTOUR/AddTour';
+import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
 
 
 const router = createBrowserRouter([
@@ -38,7 +39,9 @@ const router = createBrowserRouter([
         
       {         
           path: '/addtour',
-         element:<AddTour></AddTour>
+         element: <PrivetRoute>
+                          <AddTour></AddTour>
+                 </PrivetRoute>
        
       },
  
