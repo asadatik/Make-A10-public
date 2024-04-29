@@ -12,6 +12,7 @@ import Home from './Pages/Home/Home';
 import SignIN from './Pages/SignIn/SignIN';
 import Provider from './Provider/Provider';
 import Register from './Pages/Register/Register';
+import AddTour from './Pages/ADDTOUR/AddTour';
 
 
 const router = createBrowserRouter([
@@ -34,11 +35,11 @@ const router = createBrowserRouter([
         element:   <Register></Register>
     },
         
-    //   {         
-    //       path: '/SingleHome/:id',
-    //       element:   <PrivetRoute> <HomeDtls></HomeDtls></PrivetRoute>,   
-    //       loader :   ()=>fetch('/Home.json')
-    //   },
+      {         
+          path: '/addtour',
+         element:<AddTour></AddTour>
+       
+      },
  
     
     // {

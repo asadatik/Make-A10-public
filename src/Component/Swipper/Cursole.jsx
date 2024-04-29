@@ -17,7 +17,7 @@ const Cursole = () => {
             <a href="#slide3" className="btn btn-circle">❯</a>
           </div>
         </div> 
-        <div id="slide3" className="carousel-item relative    lg:w-full">
+        <div id="slide3" className="carousel-item relative  lg:w-full">
           <img src="https://i.ibb.co/MkWkLJM/pexels-fmaderebner-238622.jpg" className="w-full  h-96   " />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">❮</a> 
