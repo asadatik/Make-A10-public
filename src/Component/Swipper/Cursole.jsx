@@ -1,5 +1,4 @@
 
-
 const Cursole = () => {
     return (
         <div className="carousel   w-full ">

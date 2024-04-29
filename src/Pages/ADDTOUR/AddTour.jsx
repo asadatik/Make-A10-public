@@ -1,4 +1,4 @@
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 
 const AddTour = () => {
@@ -20,30 +20,30 @@ const AddTour = () => {
         const name= form.name.value;
         const  email = form.email.value;
        
-        const newCoffee = { spotname, countryName, image, location,description, cost,seasonality,time ,name,email }
+        const addTour = { spotname, countryName, image, location,description, cost,seasonality,time ,name,email }
 
-        console.log(newCoffee);
+        console.log(addTour);
          
         // send data to the server
-        // fetch('http://localhost:5000/coffee', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(newCoffee)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if(data.insertedId){
-        //             Swal.fire({
-        //                 title: 'Success!',
-        //                 text: 'Coffee Added Successfully',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'Cool'
-        //               })
-        //         }
-        //     }) 
+        fetch('http://localhost:5000/letsgo', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(addTour)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: ' Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
+                }
+            }) 
     }
     return (
         <div className=" mt-12 rounded-2xl  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-300 hover:to-green-400 p-24">
