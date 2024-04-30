@@ -24,8 +24,9 @@ const Navber = () => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <a className="text-xl text-black " >  <NavLink   to="/">  Home </NavLink></a>
-            <a className="text-xl text-white mx-8  " >    <NavLink  to="/updated"  >  Add Tourists Spot Page  </NavLink></a>      
-              <a className="text-xl text-white mx-8  "  >         <NavLink    to="/myspot"  >  My list  </NavLink>                  </a>   
+            <a className="text-xl text-white mx-2  " >         <NavLink  to="/allspot"  >   All Tourists Spot  </NavLink> </a>
+            <a className="text-xl text-white mx-2 " >    <NavLink  to="/addspot"  >  Add Tourists Spot</NavLink></a>      
+              <a className="text-xl text-white mx-2  "  >         <NavLink    to="/myspot"  >  My list  </NavLink>                  </a>   
                       
             </ul>
           </div>
@@ -34,9 +35,10 @@ const Navber = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
            <a className="text-xl text-white " >  <NavLink   to="/">  Home </NavLink></a>
-           <a className="text-xl text-white mx-8  " >    <NavLink  to="/addtour"  >  Add Tourists Spot Page  </NavLink></a>
+           <a className="text-xl text-white mx-4  " >         <NavLink  to="/allspot"  >   All tourists spot  </NavLink> </a>
+           <a className="text-xl text-white  mx-4" >    <NavLink  to="/addtour"  >  Add tourists spot   </NavLink></a>
              
-           <a className="text-xl text-white mx-8  " >         <NavLink  to="/myspot"  >  My  List  </NavLink> </a>
+           <a className="text-xl text-white mx-2  " >         <NavLink  to="/myspot"  >  My  list  </NavLink> </a>
             </ul>
             
         </div>
@@ -51,10 +53,10 @@ const Navber = () => {
                    <label  tabIndex={0} className="btn tooltip  btn-ghost btn-circle avatar">           
                   </label>
                 }
-                   {user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-orange-500 text-white  text-lg  "  >Sign Out</Link> 
+                   {user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-green-800 text-white  text-lg  "  >Log Out</Link> 
                         :  <div >
-                      <a className="text-xl text-white mx-8  " >    <NavLink  to="/login"> Login    </NavLink></a>   
-                      <a className="text-xl text-white mx-8  " >    <NavLink  to="/register"> Register   </NavLink></a>
+                      <a className="text-xl text-white mx-3  " >    <NavLink  to="/login"> Login    </NavLink></a>   
+                      <a className="text-xl text-white   " >    <NavLink  to="/register"> Register   </NavLink></a>
                       </div> }
                
                       </div>

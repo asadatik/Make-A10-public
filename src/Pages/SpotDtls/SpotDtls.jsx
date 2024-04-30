@@ -48,7 +48,7 @@ const SpotDtls = () => {
 <div   className="lg:flex   my-4 gap-5"  >
            <h2  className="  text-[#131313CC] text-xl  font-bold " >   totaVisitorsPerYear  :  <span className="  text-[#131313CC] text-xl  font-medium  "  > {visitYear}. </span>     </h2> 
                  
-                 <h2  className="text-[#131313CC] text-xl  font-bold " >    Price :  <span className="  text-[#131313CC] text-xl  font-medium  "  > {cost}. </span>     </h2>    
+                 <h2  className="text-[#131313CC] text-xl  font-bold " >    Price :  <span className="  text-[#131313CC] text-xl  font-medium  "  > ${cost}. </span>     </h2>    
            </div>
              
 </div>

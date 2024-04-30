@@ -3,7 +3,7 @@ import { MdPlace } from "react-icons/md";
 const HomeCard = ({place}) => {
 
      const {_id,spotname, countryName, image, location,description, cost,seasonality,time ,name,email} = place ;
-     console.log(_id)
+  
         
     return (
         <div 

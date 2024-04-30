@@ -16,6 +16,7 @@ import AddTour from './Pages/ADDTOUR/AddTour';
 import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
 import SpotDtls from './Pages/SpotDtls/SpotDtls';
 import Mylist from './Pages/Mylist/Mylist';
+import AllSpot from './Pages/AllSpot/AllSpot';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
            element:<Home></Home>,
            loader : () => fetch('http://localhost:5000/letsgo')
       },
+      {
+        path: "/allspot",
+           element:<AllSpot></AllSpot>,
+           loader : () => fetch('http://localhost:5000/letsgo')
+      },
+      
            {
         path:"/login",
         element:  <SignIN></SignIN>
