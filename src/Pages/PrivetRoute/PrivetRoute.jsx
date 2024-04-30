@@ -12,10 +12,11 @@ const PrivetRoute = ({children}) => {
     console.log(user)
      if(  loading ) {
         return  <div  className=" mt-20 flex justify-center   "  >
-      <span className="loading loading-dots loading-xs"></span>
-<span className="loading loading-dots loading-sm"></span>
-<span className="loading loading-dots loading-md"></span>
-<span className="loading loading-dots loading-lg"></span> </div>      
+      <span className="loading loading-dots text-info  loading-xs"></span>
+<span className="loading loading-dots text-info loading-sm"></span>
+<span className="loading loading-dots text-info loading-md"></span>
+<span className="loading loading-dots text-info loading-lg"></span> </div> 
+     
      } 
                    
        if(user)   {    
