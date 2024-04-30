@@ -15,6 +15,7 @@ import Register from './Pages/Register/Register';
 import AddTour from './Pages/ADDTOUR/AddTour';
 import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
 import SpotDtls from './Pages/SpotDtls/SpotDtls';
+import Mylist from './Pages/Mylist/Mylist';
 
 
 const router = createBrowserRouter([
@@ -54,12 +55,10 @@ const router = createBrowserRouter([
     },
  
     
-    // {
-    //   path: "/updated",
-    //   element:      <PrivetRoute>
-    //                  <Updated></Updated> 
-    //                </PrivetRoute>
-    // },
+    {
+      path: "/myspot",
+      element:  <Mylist></Mylist> 
+    },
     // {
     //   path: "info",
     //    element: <PrivetRoute>

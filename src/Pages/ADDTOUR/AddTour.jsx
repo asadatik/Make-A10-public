@@ -1,14 +1,18 @@
+import { useContext } from 'react';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../../Provider/Provider';
 
 
 const AddTour = () => {
+         
+    const{user} = useContext(AuthContext); 
+         
+       
 
 
     const handleAddPlACE = event => {
         event.preventDefault();
-
-        const form = event.target;
-            
+        const form = event.target;      
         const spotname = form.spotname.value;
         const countryName = form.countryName.value;
         const image = form.image.value;
@@ -16,11 +20,13 @@ const AddTour = () => {
         const description = form.description.value;
         const  cost = form.cost.value;
         const seasonality = form.seasonality.value;
+        const visitYear = form.visitYear.value;
         const  time = form.time.value;
         const name= form.name.value;
         const  email = form.email.value;
+       const useremail = user.email; 
        
-        const addTour = { spotname, countryName, image, location,description, cost,seasonality,time ,name,email }
+        const addTour = {useremail, spotname,visitYear, countryName, image, location,description, cost,seasonality,time ,name,email }
 
         console.log(addTour);
          
@@ -38,7 +44,7 @@ const AddTour = () => {
                 if(data.insertedId){
                     Swal.fire({
                         title: 'Success!',
-                        text: ' Added Successfully',
+                        text: 'Data inserted Successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                       })
@@ -50,18 +56,7 @@ const AddTour = () => {
             <h2 className="text-4xl   text-center font-bold">Add Tourists Spot</h2>
 
             <form className="mt-10"  onSubmit={handleAddPlACE}>  
-            {/* a. image ( use image URL)
-b. tourists_spot_name
-c.country_Name
-d. location
-e. short description
-f. average_cost
-g. seasonality - like summer, winter
-h. travel_time => like- 7 days
-i. totaVisitorsPerYear => like- 10000
-j. User Email
-k. User Name
-l. “Add” button */}
+
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
@@ -134,7 +129,7 @@ l. “Add” button */}
                             <span className="label-text uppercase">   total Visitors PerYear  </span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="seasonality" placeholder="like summer, winter" required className="input input-bordered w-full" />
+                            <input type="text" name="visitYear" placeholder=" like- 10000" required className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
