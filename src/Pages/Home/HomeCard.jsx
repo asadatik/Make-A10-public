@@ -7,10 +7,9 @@ const HomeCard = ({place}) => {
         
     return (
         <div 
-        // data-aos="flip-up"
-        //   data-aos-duration="2000"
+ 
          
-        className="card card-compact  p-5  border bg-base-300 shadow-xl">  
+        className="card card-compact  p-5  border bg-green-300 shadow-xl">  
         <figure><img  className="h-52 rounded-t-xl  lg:w-full" src={image} alt="Shoes" /></figure>
         <div className="card-body">
           <div className="lg:flex gap-5   "  >
@@ -19,7 +18,7 @@ const HomeCard = ({place}) => {
           </div>
           <p  className=" font-medium text-black"  >{description}</p>
           <div className="card-actions">
-            <button  className="btn bg-gradient-to-r from-violet-500 to-fuchsia-500   "> <Link to={`/SinglePlace/${_id}`}  className="font-bold text-white text-lg " >View Details</Link> </button>  
+            <button  className="btn bg-gradient-to-r from-violet-500 to-fuchsia-500   "> <Link to={`/singleCard/${_id}`}  className="font-bold text-white text-lg " >View Details</Link> </button>  
           </div>
         </div>
       </div>

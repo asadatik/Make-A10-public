@@ -1,4 +1,4 @@
-import { FcHome } from "react-icons/fc";
+
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
@@ -10,10 +10,10 @@ const Footer = () => {
 
     return (
         <>
-        <footer className="footer  bg-indigo-600   mt-14 p-4  lg:p-10  text-base-content">
+        <footer className="footer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  mt-14 p-4  lg:p-10  text-base-content">
    <nav>
       <div className="flex gap-1 " >
-      <FcHome className="text-3xl" />
+     
       <h6 className="footer-title text-2xl font-bold  text-orange-400 ">NestQuestHub</h6> 
          
       </div>

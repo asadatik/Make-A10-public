@@ -14,6 +14,7 @@ import Provider from './Provider/Provider';
 import Register from './Pages/Register/Register';
 import AddTour from './Pages/ADDTOUR/AddTour';
 import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
+import SpotDtls from './Pages/SpotDtls/SpotDtls';
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,13 @@ const router = createBrowserRouter([
                  </PrivetRoute>
        
       },
+      {         
+        path: '/singleCard/:id',
+        element:   <PrivetRoute>
+                     <SpotDtls></SpotDtls>         
+                 </PrivetRoute>,   
+        loader : ()=>fetch('http://localhost:5000/letsgo')
+    },
  
     
     // {
