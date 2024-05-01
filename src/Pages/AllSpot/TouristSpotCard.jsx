@@ -26,7 +26,8 @@ const TouristSpotCard = ({Spot}) => {
            <div   className=""  >
            <h2  className="  text-[#131313CC] text-xl  font-bold " >   Total Visitors PerYear  :  <span className="  text-[#131313CC] text-xl  font-medium  "  > {visitYear}. </span>     </h2> 
                  
-                 <h2  className="text-[#131313CC] text-xl  font-bold " >    Price :  <span className="  text-[#131313CC] text-xl  font-medium  "  > ${cost}. </span>     </h2>    
+                 <h2  className="text-[#131313CC] text-xl  font-bold " >   Average Cost
+  <span className="  text-[#131313CC] text-xl  font-medium  "  > ${cost}. </span>     </h2>    
            </div>
           <div className="">
             <button  className="btn w-full  bg-gradient-to-r from-violet-500 to-fuchsia-500   "> <Link to={`/singleCard/${_id}`}  className="font-bold text-white text-lg " >View Details</Link> </button>  
@@ -38,7 +39,3 @@ const TouristSpotCard = ({Spot}) => {
 
 export default TouristSpotCard;
 
-// . average_cost
-// d. totaVisitorsPerYear
-// e. travel_time
-// f. seasonality

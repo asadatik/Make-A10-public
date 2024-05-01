@@ -17,6 +17,7 @@ import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
 import SpotDtls from './Pages/SpotDtls/SpotDtls';
 import Mylist from './Pages/Mylist/Mylist';
 import AllSpot from './Pages/AllSpot/AllSpot';
+import Updated from './Pages/Updated/Updated';
 
 
 const router = createBrowserRouter([
@@ -60,19 +61,18 @@ const router = createBrowserRouter([
                  </PrivetRoute>,   
         loader : ()=>fetch('http://localhost:5000/letsgo')
     },
- 
-    
+        
+    {
+      path: "/Updated/:id",
+      element: <Updated></Updated>,
+      loader: ({params}) =>
+        fetch(`http://localhost:5000/letsgo/${params.id}`),
+    },
     {
       path: "/myspot",
       element:  <Mylist></Mylist> 
     },
-    // {
-    //   path: "info",
-    //    element: <PrivetRoute>
-    //                     <Userinfo></Userinfo>
-    //             </PrivetRoute>
-               
-    // }
+  
     ] 
   },
   

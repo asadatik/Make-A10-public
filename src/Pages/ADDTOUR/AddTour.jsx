@@ -134,9 +134,9 @@ const AddTour = () => {
                     </div>
                 </div>
                      {/*  */}
-                  <div className="md:flex mb-8">
+                  <div className="md:flex lg:mb-8">
                    
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control md:w-1/2">
                         <label className="label">
                             <span className="label-text uppercase">  Your Name  </span>
                         </label>
@@ -161,8 +161,8 @@ const AddTour = () => {
                         <label className="label">
                             <span className="label-text">Short Description</span>
                         </label>
-                        <label className="input-group">
-                            <input type="text" name="description" placeholder="Write a Short description" required className="input input-bordered w-full" />
+                        <label className="input-group  ">
+                            <input type="text" name="description" placeholder="Write a Short description" required className="input lg:h-20 input-bordered w-full" />
                         </label>
                     
                     </div>
