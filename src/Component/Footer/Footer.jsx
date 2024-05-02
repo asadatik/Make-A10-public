@@ -9,8 +9,8 @@ const Footer = () => {
 
 
     return (
-        <>
-        <footer className="footer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  mt-14 p-4  lg:p-10  text-base-content">
+        <   >
+        <footer className="footer  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  mt-14 p-4  lg:p-10  text-base-content">
    <nav>
       <div className="flex gap-1 " >
      
