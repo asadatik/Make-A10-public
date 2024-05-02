@@ -17,12 +17,13 @@ const Country = () => {
     return (
     
       <div>
-         <NavLink to='/countrycard' >
+        
          <div  className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 
         '>  
                       
          { 
             Country.map( SingleCountry=>   
+                <NavLink  to={`/countrycard/${SingleCountry.countryname}`}>
             <div className="hero rounded-2xl bg-violet-400">
 
               <div className="hero-content flex-col lg:flex-row">  
@@ -36,12 +37,12 @@ const Country = () => {
                 
               </div>
               </div>
-               </div> )
+               </div>   </NavLink>)
          }
 
 
         </div>
-       </NavLink>
+      
 
       </div>
        

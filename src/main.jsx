@@ -65,7 +65,7 @@ const router = createBrowserRouter([
     },
           
       {         
-      path: '/countrycard',
+      path: '/countrycard/:name',
       element:<CountryCard></CountryCard>,       
                
       loader : ()=>fetch('http://localhost:5000/letsgo')

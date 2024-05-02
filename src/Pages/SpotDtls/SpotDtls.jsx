@@ -13,7 +13,7 @@ const SpotDtls = () => {
       const {spotname, countryName, image,visitYear, location,description, cost,seasonality,time ,name,email} = singleId
            
          
-
+        
 
     return (  
          <div className='mt-12 '  >   
