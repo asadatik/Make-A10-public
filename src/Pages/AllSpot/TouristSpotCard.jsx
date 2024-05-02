@@ -7,9 +7,7 @@ const TouristSpotCard = ({Spot}) => {
 
 
     return (
-        <div 
- 
-         
+        <div    
         className="card card-compact  p-5  border bg-green-300 shadow-xl">  
         <figure><img  className="h-52 rounded-t-xl  lg:w-full" src={image} alt="Shoes" /></figure>
         <div className="card-body">

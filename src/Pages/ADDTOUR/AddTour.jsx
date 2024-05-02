@@ -27,7 +27,7 @@ const AddTour = () => {
        const useremail = user.email; 
        
         const addTour = {useremail, spotname,visitYear, countryName, image, location,description, cost,seasonality,time ,name,email }
-
+            
         console.log(addTour);
          
         // send data to the server
@@ -46,7 +46,7 @@ const AddTour = () => {
                         title: 'Success!',
                         text: 'Data inserted Successfully',
                         icon: 'success',
-                        confirmButtonText: 'Cool'
+                        confirmButtonText: 'OKY'
                       })
                 }
             }) 
@@ -71,8 +71,40 @@ const AddTour = () => {
                             <span className="label-text uppercase">country Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="countryName" required placeholder="Available Quantity" className="input input-bordered w-full" />
+                            
+                        <select
+                name="countryName"
+                
+                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                type="text"
+                placeholder="Select Country"
+              >
+                <option value=" Bangladesh" selected>
+            Bangladesh
+                </option>
+                <option value="Thailand" selected>
+                Thailand      
+                </option>
+                <option value="Indonesia" selected>
+                Indonesia
+                </option>
+                <option value="Malaysia" selected>
+                Malaysia
+                </option>
+                <option value="Vietnam" selected>
+                Vietnam
+                </option>
+
+                
+                <option value="Cambodia" selected>
+                Cambodia
+                </option> 
+              </select>
+     {/* <input type="text" name="countryName" required placeholder="Available Quantity" className="input input-bordered w-full" /> */}
+                       
+                       
                         </label>
+
                     </div>
                 </div>
                 {/*  */}

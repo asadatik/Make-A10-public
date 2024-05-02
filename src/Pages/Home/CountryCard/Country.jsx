@@ -19,12 +19,13 @@ const Country = () => {
       <div>
         
          <div  className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 
-        '>  
+            '>  
                       
          { 
             Country.map( SingleCountry=>   
                 <NavLink  to={`/countrycard/${SingleCountry.countryname}`}>
-            <div className="hero rounded-2xl bg-violet-400">
+            <div  data-aos="flip-up"
+           data-aos-duration="2000"  className="hero rounded-2xl bg-violet-400">
 
               <div className="hero-content flex-col lg:flex-row">  
               <img src={ SingleCountry.image} className=" lg:w-40 lg:h-64 rounded-lg shadow-2xl" />

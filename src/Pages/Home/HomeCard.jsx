@@ -4,11 +4,12 @@ const HomeCard = ({place}) => {
 
      const {_id,spotname, countryName, image, location,description, cost,seasonality,time ,name,email} = place ;
   
-        
+         
     return (
         <div 
- 
-         
+          
+           data-aos="flip-up"
+           data-aos-duration="2000"
         className="card card-compact  p-5  border bg-green-300 shadow-xl">  
         <figure><img  className="h-52 rounded-t-xl  lg:w-full" src={image} alt="Shoes" /></figure>
         <div className="card-body">

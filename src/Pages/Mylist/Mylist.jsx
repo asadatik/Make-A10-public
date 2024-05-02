@@ -56,45 +56,52 @@ const Mylist = () => {
 
 
     return (
-        <div className='"border-solid border-2 border-sky-500 my-10 ' >
 
-<div className="overflow-x-auto    ">
-  <table className="table">
-    {/* head */}
-    <thead>
-      <tr className='text-2xl  ' >
-      
-        <th >Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th>Updated or Delete</th>
-      </tr>
-    
-    </thead>
+       
+<div>
+   <h1 className='text-center mt-12 text-5xl font-bold uppercase text-purple-600 '   > My Spot List  </h1>
 
-    <tbody>
-      {/* row 1 */}
-     
-      {
-        item?.map(p  => (    
-            <tr className='font-medium'  >
-           <td   > {p.spotname}  </td>  
-        <td>{p.countryName}</td>
-        <td>{p.cost}</td>
-        <td className='lg:flex gap-3' > <Link to={`/Updated/${p._id}`} >   <button  className='btn btn-info  text-xl ' >Update</button>          </Link>
-        <button onClick={()=>handleDelete(p._id)}   className='btn btn-secondary  text-xl ' >delete</button>  
-          </td>
-      </tr>
-        
-        ))
-      }
-
-
-    </tbody>
-  </table>
+<div className='"border-solid border-2 border-sky-500 mt-5 mb-10 ' >
+           
+           <div className="overflow-x-auto    ">
+             <table className="table">
+               {/* head */}
+               <thead>
+                 <tr className='text-2xl  ' >
+                 
+                   <th > Spot Name</th>
+                   <th>Country </th>
+                   <th>Cost </th>
+                   <th>Updated or Delete</th>
+                 </tr>
+               
+               </thead>
+           
+               <tbody>
+                 {/* row 1 */}
+                
+                 {
+                   item?.map(p  => (    
+                       <tr className='font-medium'  >
+                      <td   > {p.spotname}  </td>  
+                   <td>{p.countryName}</td>
+                   <td>$ {p.cost}</td>
+                   <td className='lg:flex gap-3' > <Link to={`/Updated/${p._id}`} >   <button  className='btn btn-info  text-xl ' >Update</button>          </Link>
+                   <button onClick={()=>handleDelete(p._id)}   className='btn btn-secondary  text-xl ' >delete</button>  
+                     </td>
+                 </tr>
+                   
+                   ))
+                 }
+           
+           
+               </tbody>
+             </table>
+           </div>
+                       
+                   </div>
 </div>
-            
-        </div>
+
     );
 };
 

@@ -51,14 +51,14 @@ const Updated = () => {
 
     return (
         <div className=" mt-12 rounded-2xl  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-300 hover:to-green-400 p-24">
-        <h2 className="text-4xl   text-center font-bold">Update <span className='text-amber-800 font-extrabold    ' > {spotname}</span> Tourist Spot</h2>
+        <h2 className="text-4xl  text-black  text-center font-bold">Update <span className='text-amber-800 font-extrabold    ' > {spotname}</span> Tourist Spot</h2>
 
         <form  onSubmit={handleUpdatePlACE} className="mt-10">  
 
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text uppercase  "> Tourists Spot Name  </span>
+                        <span className="label-text uppercase font-medium text-black "> Tourists Spot Name  </span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="spotname"  defaultValue={spotname} placeholder="tourists_spot_name" required  className="input input-bordered w-full" />
@@ -66,7 +66,7 @@ const Updated = () => {
                 </div>
                 <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
-                        <span className="label-text uppercase">country Name</span>
+                        <span className="label-text font-medium text-black uppercase">country Name</span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="countryName" defaultValue={countryName}  required placeholder="Select your Country" className="input input-bordered w-full" />
@@ -77,7 +77,7 @@ const Updated = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text uppercase  "> Location </span>
+                        <span className="label-text uppercase font-medium text-black "> Location </span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="location" defaultValue={location}  placeholder="location" required className="input input-bordered w-full" />
@@ -85,7 +85,7 @@ const Updated = () => {
                 </div>
                 <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
-                        <span className="label-text  uppercase ">Image</span>
+                        <span className="label-text  uppercase font-medium text-black ">Image Url </span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="image" defaultValue={image} placeholder="Image URL" required className="input input-bordered w-full" />
@@ -97,7 +97,7 @@ const Updated = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text uppercase "> Average Cost</span>
+                        <span className="label-text uppercase font-medium text-black "> Average Cost</span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="cost" defaultValue={cost} placeholder=" average cost" required className="input input-bordered w-full" />
@@ -105,7 +105,7 @@ const Updated = () => {
                 </div>
                 <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
-                        <span className="label-text uppercase">seasonality</span>
+                        <span className="label-text font-medium text-black uppercase">seasonality</span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="seasonality" defaultValue={seasonality} placeholder="like summer, winter" required className="input input-bordered w-full" />
@@ -116,7 +116,7 @@ const Updated = () => {
               <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text uppercase "> travel time</span>          
+                        <span className="label-text uppercase font-medium text-black "> travel time</span>          
                     </label>
                     <label className="input-group">
                         <input type="text" name="time" defaultValue={time} placeholder="like- '7 days'" required className="input input-bordered w-full" />
@@ -124,7 +124,7 @@ const Updated = () => {
                 </div>
                 <div className="form-control md:w-1/2 ml-4">
                     <label className="label">
-                        <span className="label-text uppercase">   total Visitors PerYear  </span>
+                        <span className="label-text font-medium text-black uppercase">   total Visitors PerYear  </span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="visitYear" defaultValue={visitYear} placeholder=" like- 10000" required className="input input-bordered w-full" />
@@ -140,7 +140,7 @@ const Updated = () => {
                     <div className="form-control w-full">
                   
                         <label className="label">
-                            <span className="label-text uppercase ">Short Description</span>
+                            <span className="label-text uppercase font-medium text-black ">Short Description</span>
                         </label>
                         <label className="input-group  ">
                             <input type="text" name="description" defaultValue={description} required className="input lg:h-24 input-bordered w-full" />

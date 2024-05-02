@@ -16,7 +16,7 @@ const SpotDtls = () => {
         
 
     return (  
-         <div className='mt-12 '  >   
+            <div className='mt-12 '  >   
              <div className=" my-5 bg-sky-500 rounded-t-lg py-2" >
                <h1
                 className="text-center text-4xl font-semibold text-white "  > Details Of {spotname} </h1>
@@ -54,7 +54,7 @@ const SpotDtls = () => {
 </div>
     </div>
    
-       </div>
+            </div>
       
 
         
