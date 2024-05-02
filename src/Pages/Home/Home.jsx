@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Cursole from "../../Component/Swipper/Cursole";
 import HomeCard from "./HomeCard";
 import Reveiw from "../../Component/Extrapage/Reveiw";
+import Country from "./CountryCard/Country";
 
    
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
              <title> Adventures Abound/ Home </title>
             </Helmet>  */}
                   <Cursole></Cursole> 
-                <div     className=" my-5 bg-sky-200 rounded-t-2xl py-2"  > 
+                <div     className=" mt-6 mb-3 bg-sky-200 rounded-t-2xl py-2"  > 
                 <h1 className="text-center  text-3xl my-6 font-bold "  >Place to travel , <br />
                      <span className="text-4xl" > Dream. Explore. Discover.</span></h1>  
                 
@@ -29,6 +30,12 @@ const Home = () => {
                     places.slice(0,6).map(  place=> <HomeCard key={place._id}  place={place} ></HomeCard>                     )
                   }      
 
+                  </div>
+               
+                  
+                  <div className="my-12"  >
+                     <h1  className="text-center uppercase  text-sky-500 lg:text-5xl  font-bold mb-6  " >    Southeast Asia Categories            </h1>  
+                    <Country></Country>
                   </div>
                   <div>
                     <Reveiw></Reveiw>

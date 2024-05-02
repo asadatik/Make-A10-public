@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Mylist = () => {
     const{user} = useContext(AuthContext); 
-    const { updatedUser, setUpdatedUser}= useState(user);                 
+    const [control,Setcontrol]= useState(false);                 
         const [item, setItem] = useState([]);
         console.log(item)
         console.log(user);
@@ -16,14 +16,14 @@ const Mylist = () => {
             .then((data) => {
               setItem(data);
             });
-        }, [user]);
+        }, [user,control]);
           
        
         const handleDelete = (id) => {
           console.log(id);
           Swal.fire({
             title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -33,10 +33,7 @@ const Mylist = () => {
             if (result.isConfirmed) {
               fetch(`http://localhost:5000/letsgo/${id}`, {        
                 method: "DELETE",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify(updatedUser),
+              
               })
                 .then((res) => res.json())
                 .then((data) => {
@@ -47,8 +44,9 @@ const Mylist = () => {
                       text: "Your Selected spot  has been deleted.",
                       icon: "success",
                     });
-                    const remaining = user.filter((s) => s._id !==id);
-                    setUpdatedUser(remaining);
+                    // const remaining = user.filter((s) => s._id !==id);
+                    // setUpdatedUser(remaining);
+                    Setcontrol(!control)
                   }
                 });
             }

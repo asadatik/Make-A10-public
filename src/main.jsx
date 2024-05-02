@@ -18,6 +18,8 @@ import SpotDtls from './Pages/SpotDtls/SpotDtls';
 import Mylist from './Pages/Mylist/Mylist';
 import AllSpot from './Pages/AllSpot/AllSpot';
 import Updated from './Pages/Updated/Updated';
+import Country from './Pages/Home/CountryCard/Country';
+import CountryCard from './Pages/Home/CountryCard/CountryCard';
 
 
 const router = createBrowserRouter([
@@ -61,7 +63,14 @@ const router = createBrowserRouter([
                  </PrivetRoute>,   
         loader : ()=>fetch('http://localhost:5000/letsgo')
     },
-        
+          
+      {         
+      path: '/countrycard',
+      element:<CountryCard></CountryCard>,       
+               
+      loader : ()=>fetch('http://localhost:5000/letsgo')
+     }, 
+
     {
       path: "/Updated/:id",
       element: <Updated></Updated>,
@@ -72,7 +81,7 @@ const router = createBrowserRouter([
       path: "/myspot",
       element:  <Mylist></Mylist> 
     },
-  
+
     ] 
   },
   

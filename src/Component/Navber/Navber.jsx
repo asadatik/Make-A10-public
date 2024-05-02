@@ -30,7 +30,7 @@ const Navber = () => {
                       
             </ul>
           </div>
-          <a className="  lg:text-4xl font-extrabold  text-orange-200   ">Adventures Abound</a>
+          <a className="  lg:text-4xl font-extrabold  uppercase text-orange-200   ">Adventures Abound</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

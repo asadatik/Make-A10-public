@@ -21,7 +21,7 @@ const Updated = () => {
         const  time = form.time.value;
        
         const addTour = { spotname,visitYear, countryName, image, location,description, cost,seasonality,time }
-
+                  
         console.log(addTour);
          
         // send data to the server
