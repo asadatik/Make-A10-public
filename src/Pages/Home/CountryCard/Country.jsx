@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
@@ -23,8 +23,8 @@ const Country = () => {
                       
          { 
             Country.map( SingleCountry=>   
-                <NavLink  to={`/countrycard/${SingleCountry.countryname}`}>
-            <div  data-aos="flip-up"  
+                <NavLink  key={SingleCountry._1d}  to={`/countrycard/${SingleCountry.countryname}`}>
+            <div    data-aos="flip-up"  
            data-aos-duration="2000"  className="hero rounded-2xl bg-violet-400">
 
               <div className="hero-content flex-col lg:flex-row">  

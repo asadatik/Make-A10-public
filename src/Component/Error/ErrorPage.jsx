@@ -15,7 +15,7 @@ const ErrorPage = () => {
          
       
    </div>
-   <div className=" text-center  mt-8 "  >    <NavLink  to='/'  > < button    className=" bg-amber-400 text-2xl font-medium  btn text-secondary  "  > Back Home </button> </NavLink>     </div>
+   <div className=" text-center  mt-8 "  >    <NavLink  to='/'  > < button    className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-300 text-2xl font-medium text-black btn   "  > Back to Home </button> </NavLink>     </div>
    </div>
     );
 };

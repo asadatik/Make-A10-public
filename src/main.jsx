@@ -18,7 +18,7 @@ import SpotDtls from './Pages/SpotDtls/SpotDtls';
 import Mylist from './Pages/Mylist/Mylist';
 import AllSpot from './Pages/AllSpot/AllSpot';
 import Updated from './Pages/Updated/Updated';
-import Country from './Pages/Home/CountryCard/Country';
+
 import CountryCard from './Pages/Home/CountryCard/CountryCard';
 
 

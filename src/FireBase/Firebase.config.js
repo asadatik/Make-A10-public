@@ -6,12 +6,15 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAyxpmn6WHM_TMuAObUh2mIdBFC3DqH72E",
-  authDomain: "adventures-abound.firebaseapp.com",
-  projectId: "adventures-abound",
-  storageBucket: "adventures-abound.appspot.com",
-  messagingSenderId: "912272333757",
-  appId: "1:912272333757:web:ab5163bc6d36e94c3390d4"
+ 
+  apiKey:import.meta.env.VITE_APIKEY ,
+  authDomain:import.meta.env. VITE_AUTHDOMAIN ,
+
+  projectId:import.meta.env.VITE_PROJECTID ,
+  storageBucket:import.meta.env. VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env. VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
+
 };
 
 // Initialize Firebase

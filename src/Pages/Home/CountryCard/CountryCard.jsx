@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { AiOutlineDoubleRight } from "react-icons/ai";
 const CountryCard = () => {
@@ -22,7 +22,7 @@ const CountryCard = () => {
         { singleId.map(id=>        
                   <div 
  
-         
+                      key={singleId._id}
                   className="card card-compact  p-5  border bg-green-300 shadow-xl">  
                   <figure><img  className="h-52 rounded-t-xl  lg:w-full" src={id.image} alt="Shoes" /></figure>
                   <div className="card-body">
