@@ -1,15 +1,13 @@
-import React from 'react';
+import { Fade } from "react-awesome-reveal";
 
 const Reveiw = () => {
     return (
         <div>
           <div>
-                     <h1  className="text-center uppercase  text-sky-500 lg:text-4xl  font-bold mb-6"
-        
-        >
-          Frequently Asked Questions.
-         
-        </h1>
+                      <Fade cascade damping={0.1}>
+                  <h1  className="text-center uppercase  text-sky-500 lg:text-5xl  font-bold mb-6  " >     Frequently Asked Questions.    </h1>       
+  
+                    </Fade>
         <div
           
           className="my-6 flex flex-col gap-4 rounded-xl   border border-black p-4"
@@ -24,7 +22,7 @@ const Reveiw = () => {
             How can I book tickets or reservations for attractions through this website?
             </div>
             <div className="collapse-content">
-              <p>To book tickets or reservations for attractions featured on our website, simply navigate to the booking section of the respective attraction's page. Follow the prompts to select your desired date, time, and number of tickets, then proceed to payment.</p>
+              <p>To book tickets or reservations for attractions featured on our website, simply navigate to the booking section of the respective attraction`s page. Follow the prompts to select your desired date, time, and number of tickets, then proceed to payment.</p>
             </div>
           </div>
           <div

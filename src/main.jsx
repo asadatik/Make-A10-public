@@ -73,13 +73,17 @@ const router = createBrowserRouter([
 
     {
       path: "/Updated/:id",
-      element: <Updated></Updated>,
+      element:  <PrivetRoute>  <Updated></Updated>  </PrivetRoute> ,
       loader: ({params}) =>
         fetch(`http://localhost:5000/letsgo/${params.id}`),
     },
     {
       path: "/myspot",
-      element:  <Mylist></Mylist> 
+      element: 
+         <PrivetRoute>
+                 <Mylist></Mylist> 
+         </PrivetRoute>
+      
     },
 
     ] 

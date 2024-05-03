@@ -4,9 +4,11 @@ import Cursole from "../../Component/Swipper/Cursole";
 import HomeCard from "./HomeCard";
 import Reveiw from "../../Component/Extrapage/Reveiw";
 import Country from "./CountryCard/Country";
-import Typewriter from 'react-simple-typewriter';
+import { Fade } from "react-awesome-reveal";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Fedback from "../../Component/Extrapage/Fedback";
 // ..
 AOS.init();  
 
@@ -21,21 +23,14 @@ const Home = () => {
                 
         
                   <Cursole></Cursole> 
-                <div     className="  mt-6 mb-3 bg-violet-500 rounded-t-3xl py-2"  > 
-                   {/* <h1>
-                    <Typwriter
-          words={['Hello', 'World', 'React']}
-          loop={true}
-          cursor
-          cursorStyle='_'
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
-        />
-                      {/* Place to travel , <br />
-                     <span className="text-4xl" > Dream. Explore. Discover.</span> 
-                      </h1>   
-                 */}
+                <div  
+                
+                className=" text-center font-bold mt-6 mb-3 bg-violet-500 rounded-t-3xl py-2"  > 
+                 
+                 <Fade cascade>
+  <p className="text-3xl"   >                       Place to travel ,  </p>
+        <p><span className="text-4xl" > Dream. Explore. Discover.</span></p>
+</Fade>            
 
 
                  </div>
@@ -50,11 +45,18 @@ const Home = () => {
                
                   
                   <div className="my-12"  >
-                     <h1  className="text-center uppercase  text-sky-500 lg:text-5xl  font-bold mb-6  " >    Southeast Asia Categories            </h1>  
+                  <Fade cascade damping={0.1}>
+                  <h1  className="text-center uppercase  text-sky-500 lg:text-5xl  font-bold mb-6  " >    Southeast Asia Categories     </h1>       
+  
+                    </Fade>
+                     
                     <Country></Country>
                   </div>
                   <div>
                     <Reveiw></Reveiw>
+                  </div>
+                  <div>
+                    <Fedback></Fedback>
                   </div>
                      
         </div>

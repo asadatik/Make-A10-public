@@ -98,14 +98,16 @@ const Navber = () => {
                    <label  tabIndex={0} className="btn tooltip  btn-ghost btn-circle avatar">           
                   </label>
                 }
-                   {user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-sky-950 text-white  text-lg  "  >Log Out</Link> 
+                 
+                    
+                     {user ? <Link onClick={signOut} className="  p-1  rounded-xl bg-sky-950 text-white  text-lg  "  >Log Out</Link> 
                         :  <div >
                       <a className="text-xl text-white mx-3  " >    <NavLink  to="/login"> Login    </NavLink></a>   
                       <a className="text-xl text-white   " >    <NavLink  to="/register"> Register   </NavLink></a>
                       </div> }
-               
+                       </div>
                       </div>
-                </div>
+              
     );
 };
 

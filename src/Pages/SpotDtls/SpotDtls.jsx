@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useLoaderData, useParams } from 'react-router-dom';
 import { MdPlace } from "react-icons/md";
 const SpotDtls = () => {   
@@ -10,7 +10,7 @@ const SpotDtls = () => {
     const singleId =Spot.find(spot =>spot._id == id )
      console.log(singleId);
 
-      const {spotname, countryName, image,visitYear, location,description, cost,seasonality,time ,name,email} = singleId
+      const {spotname, countryName, image,visitYear, location,description, cost,seasonality,time } = singleId
            
          
         

@@ -5,14 +5,14 @@ import Footer from "../Component/Footer/Footer";
 
 const Root = () => {
     return (
-        <div className="sm:mx-3  " >
+        <div className="" >
                <Navber></Navber>
                  
              <div className=" 2xl:container mx-auto">
                   <Outlet></Outlet>                 
                       
                </div>
-              
+                        
                    <Footer></Footer>
             </div>
     );

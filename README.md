@@ -1,8 +1,9 @@
-# React + Vite
+# Adventures Abound: Explore the Wonders of South Asia
+Live Site: (  )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+ - **Customized Tours:** Tailored itineraries to suit your preferences, whether you're seeking an           adrenaline-packed adventure or a leisurely cultural immersion.
+ - **Expert Guides:** Our knowledgeable guides will lead you through hidden gems and popular attractions, providing insights that enrich your journey.
+- **Cultural Experiences:** Immerse yourself in the diverse cultures of South Asia with authentic culinary experiences, traditional performances, and interactions with local communities.
+ - **Adventure Activities:** Embark on thrilling adventures such as trekking in the Himalayas, white-water rafting in Nepal, or exploring ancient ruins in Sri Lanka.
+ - **Responsible Tourism:** We are committed to sustainable and responsible tourism practices, ensuring that our adventures contribute positively to local communities and the environment.
