@@ -25,7 +25,7 @@ const Updated = () => {
         console.log(addTour);
          
         // send data to the server
-        fetch(`http://localhost:5000/letsgo/${_id}`, {
+        fetch(`https://tuor-management.vercel.app/letsgo/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import{ useContext, useState } from 'react';
+
+import{ useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Provider/Provider';
 import Swal from "sweetalert2";     
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ const Mylist = () => {
         console.log(item)
         console.log(user);
         useEffect(() => {
-          fetch(`http://localhost:5000/myspot/${user?.email}`)
+          fetch(`https://tuor-management.vercel.app/myspot/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
               setItem(data);
@@ -31,7 +31,7 @@ const Mylist = () => {
             confirmButtonText: " delete Confirm!",
           }).then((result) => {
             if (result.isConfirmed) {
-              fetch(`http://localhost:5000/letsgo/${id}`, {        
+              fetch(`https://tuor-management.vercel.app/letsgo/${id}`, {        
                 method: "DELETE",
               
               })
@@ -82,7 +82,7 @@ const Mylist = () => {
                 
                  {
                    item?.map(p  => (    
-                       <tr className='font-medium'  >
+                       <tr key={p._id} className='font-medium'  >
                       <td   > {p.spotname}  </td>  
                    <td>{p.countryName}</td>
                    <td>$ {p.cost}</td>

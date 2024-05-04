@@ -29,9 +29,9 @@ const AddTour = () => {
         const addTour = {useremail, spotname,visitYear, countryName, image, location,description, cost,seasonality,time ,name,email }
             
         console.log(addTour);
-         
+         console.log(countryName)
         // send data to the server
-        fetch('http://localhost:5000/letsgo', {
+        fetch('https://tuor-management.vercel.app/letsgo', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -79,7 +79,7 @@ const AddTour = () => {
                 type="text"
                 placeholder="Select Country"
               >
-                <option value=" Bangladesh" selected>
+                <option value="Bangladesh" selected>
             Bangladesh
                 </option>
                 <option value="Thailand" selected>

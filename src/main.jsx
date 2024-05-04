@@ -32,12 +32,12 @@ const router = createBrowserRouter([
       {
         path: "/",
            element:<Home></Home>,
-           loader : () => fetch('http://localhost:5000/letsgo')
+           loader : () => fetch('https://tuor-management.vercel.app/letsgo')
       },
       {
         path: "/allspot",
            element:<AllSpot></AllSpot>,
-           loader : () => fetch('http://localhost:5000/letsgo')
+           loader : () => fetch('https://tuor-management.vercel.app/letsgo')
       },
       
            {
@@ -61,21 +61,21 @@ const router = createBrowserRouter([
         element:   <PrivetRoute>
                      <SpotDtls></SpotDtls>         
                  </PrivetRoute>,   
-        loader : ()=>fetch('http://localhost:5000/letsgo')
+        loader : ()=>fetch('https://tuor-management.vercel.app/letsgo')
     },
           
       {         
       path: '/countrycard/:name',
       element:<CountryCard></CountryCard>,       
                
-      loader : ()=>fetch('http://localhost:5000/letsgo')
+      loader : ()=>fetch('https://tuor-management.vercel.app/letsgo')
      }, 
 
     {
       path: "/Updated/:id",
       element:  <PrivetRoute>  <Updated></Updated>  </PrivetRoute> ,
       loader: ({params}) =>
-        fetch(`http://localhost:5000/letsgo/${params.id}`),
+        fetch(`https://tuor-management.vercel.app/letsgo/${params.id}`),
     },
     {
       path: "/myspot",

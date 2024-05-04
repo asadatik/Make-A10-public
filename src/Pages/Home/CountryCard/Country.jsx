@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Country = () => {
     const [ Country ,Setcountry] = useState([]);
     useEffect( () =>{
-          fetch ('http://localhost:5000/country')
+          fetch ('https://tuor-management.vercel.app/country')
           .then(res=>res.json())
                 
           .then(data =>Setcountry(data))
